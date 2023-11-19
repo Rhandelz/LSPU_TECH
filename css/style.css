@@ -692,6 +692,12 @@ summary::-webkit-details-marker {
     background-attachment: scroll;
   }
 
+  .proposition,
+  .join_us,
+  .feedback {
+    background-attachment: scroll;
+  }
+
   .btn_container {
     text-align: center;
   }
