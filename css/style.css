@@ -83,7 +83,7 @@ header img {
 
 .hero {
   width: 85%;
-  height: 100vh;
+  height: 100svh;
   background-color: #2093da;
   background: var(--balance_bg), url("../asset/main_.jpg");
 
