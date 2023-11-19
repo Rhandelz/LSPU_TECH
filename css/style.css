@@ -689,6 +689,7 @@ summary::-webkit-details-marker {
 
   .hero {
     border-radius: 0px;
+    background-attachment: scroll;
   }
 
   .btn_container {
