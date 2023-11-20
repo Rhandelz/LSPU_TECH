@@ -598,6 +598,37 @@ summary::-webkit-details-marker {
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gallery div {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.gallery div img:hover {
+  filter: grayscale(0%);
+}
+
+.gallery div img {
+  height: 95%;
+  width: 95%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.bigger {
+  height: 50%;
+}
+
+.gallery div .lower {
+  width: 48%;
 }
 
 .gallery img {
@@ -677,8 +708,8 @@ summary::-webkit-details-marker {
     overflow: hidden;
   }
 
-  .gallery img {
-    height: 90%;
+  .gallery div img {
+    filter: grayscale(0%);
   }
 }
 
@@ -781,17 +812,22 @@ summary::-webkit-details-marker {
     justify-content: space-between;
   }
 
-  .gallery img {
-    display: none;
+  .gallery {
+    flex-direction: column;
+    height: min-content;
+    padding-top: 0px;
+  }
+  .gallery div {
+    width: 100%;
+    gap: 0px;
   }
 
-  .gallery {
-    background: var(--balance_bg), url("../asset/bgbg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  .gallery div img {
+    height: 100%;
+    width: 100%;
   }
-  .gallery h4 {
-    color: white;
+
+  .gallery div .lower {
+    width: 100%;
   }
 }
